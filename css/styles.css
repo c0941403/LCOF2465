@@ -67,7 +67,7 @@ header h2{
 
 #main_section section{
     width: 75%;
-    background-image: url(images/section_image.jpg);
+    background-image: url(/images/section_image.jpg);
     height: inherit;
     float: left;
     text-align: center;
