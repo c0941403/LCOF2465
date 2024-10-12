@@ -40,6 +40,7 @@ header h2{
     display: inline;
     list-style-type: none;
     line-height: 100px;
+    float: left;
 }
 
 #navbar li a{
@@ -48,6 +49,11 @@ header h2{
     text-decoration: none;
     padding: 20px;
     color: #000;
+}
+
+#navbar li a:hover{
+    background-color: #000;
+    color: #fff;
 }
 
 /* Styling for logo */
