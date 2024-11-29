@@ -1,138 +1,271 @@
-/* CSS Reset */
-*{
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
 }
 
-header{
-    width: 100%;
-    height: 100px;
-    background-color: rgb(247, 244, 244);
+/* Header Section */
+header {
+    background: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header h2{
-    font-family: 'Trebuchet MS', sans-serif;
-    margin-left: 35px;
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#logo-area{
-    width: 15%;
-    float:left;
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
-#navbar{
-    width: 50%;
+.logo {
+    max-width: 60px; /* Small logo */
+    height: auto;
+    margin-right: 15px;
 }
 
-#search{
-    width: 35%;
-    height: inherit;
+h1 {
+    font-size: 1.8em;
+    margin: 0;
 }
 
-#search input{
-    height: 40px;
-    width: 350px;
-    
+/* Navigation Menu */
+nav {
+    display: flex;
+    align-items: center;
 }
 
-#navbar li{
-    display: inline;
-    list-style-type: none;
-    line-height: 100px;
-    float: left;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
 }
 
-#navbar li a{
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 21px;
-    text-decoration: none;
-    padding: 20px;
-    color: #000;
-}
-
-#navbar li a:hover{
-    background-color: #000;
-    color: #fff;
-}
-
-/* Styling for logo */
-#logo_image{
+nav ul li {
     display: inline-block;
-    height: 55px;
-    width: 55px;
-    margin-left: 40%;
 }
 
-/* section main */
-#main_section{
-    width: 100%;
-    height: 520px;
-    background-color: rgb(239, 235, 235);
-}
-
-#main_section section{
-    width: 75%;
-    background-image: url(/images/section_image.jpg);
-    height: inherit;
-    float: left;
-    text-align: center;
-    line-height: 520px;
-}
-
-#main_section section h1{
-    font-size: 60px;
-    color: #fff;
-    font-family: 'Trebuchet MS', sans-serif;
-}
-
-#main_section aside{
-    width: 25%;
-    height: inherit;
-    float: right;
-    text-align: center;
-    background-color: #fff;
-}
-
-#main_section aside h1{
-    font-size: 25px;
-    font-family: 'Trebuchet MS', sans-serif;
-    padding-top: 15px;
-    color:rgb(5, 133, 5)
-}
-
-#main_section aside p{
-    padding-top: 30%;
-    font-size: 24px;
+nav ul li a {
+    color: white;
+    text-decoration: none;
     font-weight: bold;
-    font-family: 'Trebuchet MS', sans-serif;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
 }
 
-#main_section aside #adButton{
-    display: block;
-    height: 58px;
-    width: 195px;
-    font-size: 20px;
-    font-family: 'Trebuchet MS', sans-serif;
-    background-color: rgb(32, 231, 32);
-    margin: 20px auto;
-    border: 1px solid rgb(32, 231, 32);
-    border-radius: 7px;
+nav ul li a:hover {
+    background: white;
+    color: #ff4500;
 }
 
-#main_section aside #adButton:hover{
+/* Search Bar in Navigation */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.search-container input {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.search-container button {
+    padding: 8px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff4500;
+    color: white;
     cursor: pointer;
-    background-color: rgb(5, 114, 5);
-    color: #fff;
-    border: 1px solid rgb(5, 114, 5);
+    transition: background-color 0.3s;
 }
 
-footer{
-    background-color: rgb(247, 244, 244);
-    width: 100%;
-    height: 90px;
-    color: #000;
-    font-family: 'Trebuchet MS', sans-serif;
+.search-container button:hover {
+    background-color: #e63946;
+}
+
+
+
+/* Hero Section */
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 25px;
+    color: white;
+    height: 100vh; /* Full viewport height */
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    overflow: hidden;
+}
+
+.hero-content {
+    z-index: 2; /* Ensures the text appears on top of the image */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 30px;
+    background: #ff4500;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hero button:hover {
+    background: white;
+    color: #ff4500;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+main h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ff4500;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Team Section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.team-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    font-size: 1.5em;
+    color: #ff4500;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.team-card p {
+    font-size: 1em;
+    padding: 0 15px 15px;
+    text-align: center;
+    color: #555;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1em;
+    color: #333;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #ff4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #ff7b00;
+}
+
+/* Footer */
+footer {
+    background:linear-gradient(to right, #ff7b00, #ff4500);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
