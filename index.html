@@ -1,59 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Sajham Instant Pot</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sajham Instant Pot - Home</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="header-container">
-            <div class="logo-container">
-                <img src="images/logo.png" alt="Sajham Instant Pot Logo" class="logo">
-            </div>
-            <h1>Sajham Instant Pot</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <a href="index.html"><img src="images/logo.png" alt="Sajham Instant Pot Logo" class="logo"></a>
+        <a href="index.html"><span class="company-name">SAJHAM INSTANT POT</span></a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." aria-label="Search">
+        <button type="button">🔍</button>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Search Bar -->
-    <div class="search-container">
-        <input type="text" id="search-bar" placeholder="Search products..." />
-        <button onclick="searchProducts()">Search</button>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Sajham Instant Pot</h1>
+      <p>Your destination for premium rice cookers!</p>
+      <a href="products.html" class="btn">Explore Products</a>
     </div>
+  </section>
 
-    <!-- Hero Section -->
-    <div class="hero">
-        <div class="hero-content">
-            <h1>Your Perfect Rice Cooker Awaits</h1>
-            <p>Explore our range of innovative, reliable, and stylish rice cookers.</p>
-            <button onclick="window.location.href='products.html'">Shop Now</button>
-        </div>
+  <!-- Highlights Section -->
+  <section class="highlights">
+    <h2>Why Choose Sajham Instant Pot?</h2>
+    <div class="highlight-cards">
+      <div class="card">
+        <img src="images/durable.jpg" alt="Durable Cooker">
+        <h3>Durable</h3>
+        <p>Built to last with high-quality materials.</p>
+      </div>
+      <div class="card">
+        <img src="images/versatile.jpg" alt="Versatile Cooker">
+        <h3>Versatile</h3>
+        <p>Perfect for cooking a variety of dishes.</p>
+      </div>
+      <div class="card">
+        <img src="images/efficient.jpg" alt="Efficient Cooker">
+        <h3>Efficient</h3>
+        <p>Save time with fast and efficient cooking.</p>
+      </div>
     </div>
+  </section>
 
-    <!-- Main Content -->
-    <main>
-        <section>
-            <h2>Why Choose Sajham Instant Pot?</h2>
-            <p>We deliver quality and innovation to your kitchen. Trusted by thousands of households worldwide.</p>
-        </section>
-    </main>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Sajham Instant Pot. All rights reserved.</p>
+  </footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Sajham Instant Pot. All Rights Reserved.</p>
-    </footer>
-
-    
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>

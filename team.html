@@ -1,48 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet Our Team - Sajham Instant Pot</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team - Sajham Instant Pot</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Our Team</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Dedicated Professionals</h2>
-            <p>Our team of experts works tirelessly to bring you the best rice cooking experience.</p>
-        </section>
-        <section>
-            <h3>Team Members</h3>
-            <div class="product-grid">
-                <div class="product-item">
-                    <img src="images/team1.jpg" alt="Subham Chaudhary">
-                    <h3>Subham Chaudhary</h3>
-                    <p>Founder & CEO</p>
-                </div>
-                <div class="product-item">
-                    <img src="images/team2.jpg" alt="Subham Chaudhary">
-                    <h3>Subham Chaudhary</h3>
-                    <p>Product Manager</p>
-                </div>
-            </div>
-        </section>
-        
-    </main>
-    <footer>
-        <p>&copy; 2024 Sajham Instant Pot. All Rights Reserved.</p>
-    </footer>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="Sajham Instant Pot Logo" class="logo">
+        <span class="company-name">SAJHAM INSTANT POT</span>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." aria-label="Search">
+        <button type="button">🔍</button>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Team Section -->
+  <section class="team">
+    <h1>Meet Our Team</h1>
+    <p>Our dedicated team of professionals is the driving force behind Sajham Instant Pot.</p>
+    <div class="team-container">
+      <!-- Team Member 1 -->
+      <div class="team-card">
+        <img src="images/subham.jpg" alt="CEO - Team Member">
+        <h3>Subham Chaudhary</h3>
+        <p>CEO</p>
+        <p>Leading with vision and passion to redefine the kitchen appliance industry.</p>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="team-card">
+        <img src="images/keshav.jpg" alt="Marketing Head - Team Member">
+        <h3>Keshav Koirala</h3>
+        <p>Marketing Head</p>
+        <p>Creating innovative campaigns to connect with our valued customers.</p>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="team-card">
+        <img src="images/prabesh.jpg" alt="Marketing Head - Team Member">
+        <h3>Prabesh Bam</h3>
+        <p>Marketing Head</p>
+        <p>Ensuring our products are built with cutting-edge technology.</p>
+      </div>
+      <div class="team-card">
+        <img src="images/ayush.jpg" alt="Business Lead - Team Member">
+        <h3>Ayush Mishra</h3>
+        <p>Business Lead</p>
+        <p>Ensuring our products are built with cutting-edge technology and cost-effective Material.</p>
+      </div>
+      <div class="team-card">
+        <img src="images/sandip.jpg" alt="Creative Head - Team Member">
+        <h3>Sandip Chaudhary</h3>
+        <p>Creative Head</p>
+        <p>Ensuring our products are built with fully fledged material.</p>
+      </div>
+      <div class="team-card">
+        <img src="images/aayush.jpg" alt="Staff - Team Member">
+        <h3>Aayush Acharya</h3>
+        <p>Staff</p>
+        <p>Ensuring our products are delivered to customers in good manner.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Sajham Instant Pot. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>

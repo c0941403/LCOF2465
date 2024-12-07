@@ -1,36 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Sajham Instant Pot</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Sajham Instant Pot</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>About Sajham Instant Pot</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Who We Are</h2>
-            <p>Sajham Instant Pot is dedicated to bringing high-quality, reliable rice cookers to homes worldwide. Our mission is to make cooking easier and more enjoyable for everyone.</p>
-        </section>
-        <section>
-            <h2>Our History</h2>
-            <p>Founded in 2010, Sajham Instant Pot has become a trusted name in kitchen appliances, offering a wide range of rice cookers to suit every need.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Sajham Instant Pot. All Rights Reserved.</p>
-    </footer>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="Sajham Instant Pot Logo" class="logo">
+        <span class="company-name">SAJHAM INSTANT POT</span>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." aria-label="Search">
+        <button type="button">🔍</button>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-us">
+    <div class="about-container">
+      <h1>About Us</h1>
+      <p>
+        Welcome to **Sajham Instant Pot**, your trusted partner in bringing quality and convenience to your kitchen. We specialize in selling premium rice cookers designed to make your cooking experience seamless and enjoyable.
+      </p>
+      <p>
+        Since our inception, we have been committed to offering products that combine durability, efficiency, and modern design. Our wide range of rice cookers ensures that there is a perfect match for every household, whether you're a culinary expert or a busy individual looking for quick and reliable solutions.
+      </p>
+    </div>
+    <div class="mission-container">
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is to transform the way people cook by providing innovative and reliable rice cookers. We believe in enhancing the lives of our customers through cutting-edge technology and unparalleled customer service.
+      </p>
+    </div>
+    <div class="values-container">
+      <h2>Our Values</h2>
+      <ul>
+        <li>Quality: Delivering products that last and perform excellently.</li>
+        <li>Innovation: Incorporating the latest technology for better cooking.</li>
+        <li>Customer Satisfaction: Ensuring a delightful customer experience.</li>
+        <li>Sustainability: Prioritizing eco-friendly practices in our designs.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Sajham Instant Pot. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>

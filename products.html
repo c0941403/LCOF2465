@@ -1,48 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products - Sajham Instant Pot</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Sajham Instant Pot</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Our Products</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Rice Cookers</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <img src="images/product1.jpg" alt="Compact Rice Cooker">
-                    <h3>Rice Cooker A</h3>
-                    <p>Compact and efficient, perfect for small families.</p>
-                </div>
-                <div class="product-item">
-                    <img src="images/product2.jpg" alt="Advanced Rice Cooker">
-                    <h3>Rice Cooker B</h3>
-                    <p>Advanced features for the perfect cooking experience.</p>
-                </div>
-                <div class="product-item">
-                    <img src="images/product3.jpg" alt="Large Rice Cooker">
-                    <h3>Rice Cooker C</h3>
-                    <p>Large capacity, ideal for big gatherings.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Sajham Instant Pot. All Rights Reserved.</p>
-    </footer>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="Sajham Instant Pot Logo" class="logo">
+        <span class="company-name">SAJHAM INSTANT POT</span>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." aria-label="Search">
+        <button type="button">🔍</button>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Products Section -->
+  <section class="products">
+    <h1>Our Products</h1>
+    <p>Explore our wide range of premium rice cookers, tailored to suit every kitchen.</p>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="images/ricecooker1.jpg" alt="Classic Rice Cooker">
+        <h3>Classic Rice Cooker</h3>
+        <p><strong>Color:</strong> White</p>
+        <p><strong>Material:</strong> Stainless Steel</p>
+        <p><strong>Price:</strong> $50</p>
+        <p><strong>Model No:</strong> RC-101</p>
+        <p><strong>Features:</strong> Auto-warm, Compact Design</p>
+        <p><strong>Size:</strong> 1.8L</p>
+      </div>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="images/ricecooker2.jpg" alt="Smart Rice Cooker">
+        <h3>Smart Rice Cooker</h3>
+        <p><strong>Color:</strong> Silver</p>
+        <p><strong>Material:</strong> Aluminum</p>
+        <p><strong>Price:</strong> $80</p>
+        <p><strong>Model No:</strong> RC-202</p>
+        <p><strong>Features:</strong> Programmable Settings, LCD Display</p>
+        <p><strong>Size:</strong> 2.5L</p>
+      </div>
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="images/ricecooker3.jpg" alt="Deluxe Rice Cooker">
+        <h3>Deluxe Rice Cooker</h3>
+        <p><strong>Color:</strong> Black</p>
+        <p><strong>Material:</strong> Ceramic</p>
+        <p><strong>Price:</strong> $120</p>
+        <p><strong>Model No:</strong> RC-303</p>
+        <p><strong>Features:</strong> Multi-Cook, Non-Stick Pot</p>
+        <p><strong>Size:</strong> 3.0L</p>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="images/ricecooker4.jpg" alt="Mini Rice Cooker">
+        <h3>Mini Rice Cooker</h3>
+        <p><strong>Color:</strong> Red</p>
+        <p><strong>Material:</strong> Plastic</p>
+        <p><strong>Price:</strong> $35</p>
+        <p><strong>Model No:</strong> RC-404</p>
+        <p><strong>Features:</strong> One-Touch Cooking, Space-Saving</p>
+        <p><strong>Size:</strong> 0.8L</p>
+      </div>
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="images/ricecooker5.jpg" alt="Family Size Rice Cooker">
+        <h3>Family Size Rice Cooker</h3>
+        <p><strong>Color:</strong> Blue</p>
+        <p><strong>Material:</strong> Stainless Steel</p>
+        <p><strong>Price:</strong> $95</p>
+        <p><strong>Model No:</strong> RC-505</p>
+        <p><strong>Features:</strong> Large Capacity, Quick Cook</p>
+        <p><strong>Size:</strong> 5.0L</p>
+      </div>
+      <!-- Product 7 -->
+      <div class="product-card">
+        <img src="images/ricecooker7.jpg" alt="Luxury Rice Cooker">
+        <h3>Luxury Rice Cooker</h3>
+        <p><strong>Color:</strong> Gold</p>
+        <p><strong>Material:</strong> Stainless Steel</p>
+        <p><strong>Price:</strong> $150</p>
+        <p><strong>Model No:</strong> RC-707</p>
+        <p><strong>Features:</strong> Smart Technology, Voice Control</p>
+        <p><strong>Size:</strong> 3.5L</p>
+      </div>
+      <!-- Product 8 -->
+      <div class="product-card">
+        <img src="images/ricecooker8.jpg" alt="Premium Rice Cooker">
+        <h3>Premium Rice Cooker</h3>
+        <p><strong>Color:</strong> Black</p>
+        <p><strong>Material:</strong> Non-Stick Aluminum</p>
+        <p><strong>Price:</strong> $110</p>
+        <p><strong>Model No:</strong> RC-808</p>
+        <p><strong>Features:</strong> Keep Warm, Multi-Cook Function</p>
+        <p><strong>Size:</strong> 2.8L</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Sajham Instant Pot. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
